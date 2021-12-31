@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 class SonarDepthIncrease:
     increased_count = 0
 
