@@ -11,7 +11,10 @@ class Day02:
 
         # Part 1
         ps.process_all_course_changes()
-        print(f"Part1: Final horizontal: {ps.horizontal} depth: {ps.depth} result: {ps.horizontal * ps.depth}")
+        print(f"Part1: Final horizontal: {ps.horizontal} depth: {ps.part1_depth} result: {ps.horizontal * ps.part1_depth}")
+
+        # Part 2
+        print(f"Part2: Final horizontal: {ps.horizontal} depth: {ps.part2_depth} result: {ps.horizontal * ps.part2_depth}")
 
 
 if __name__ == "__main__":

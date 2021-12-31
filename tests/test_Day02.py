@@ -18,14 +18,15 @@ forward 2"""
         self.assertEqual(self.ps.horizontal, 5, "Incorrect forward change")
 
         self.ps.process_course_change("down", 5)
-        self.assertEqual(self.ps.depth, 5, "Incorrect positive depth change")
+        self.assertEqual(self.ps.part1_depth, 5, "Incorrect positive depth change")
 
         self.ps.process_course_change("up", 3)
-        self.assertEqual(self.ps.depth, 2, "Incorrect negative depth change")
+        self.assertEqual(self.ps.part1_depth, 2, "Incorrect negative depth change")
 
     def test_process_all_course_changes(self):
         self.ps.process_all_course_changes()
         self.assertEqual(self.ps.horizontal, 15, "Incorrect processing of horizontal changes")
-        self.assertEqual(self.ps.depth, 10, "Incorrect processing of depth changes")
+        self.assertEqual(self.ps.part1_depth, 10, "Incorrect processing of depth changes for Part1")
+        self.assertEqual(self.ps.part2_depth, 60, "Incorrect processing of depth for Part2")
 
     
