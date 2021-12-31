@@ -14,4 +14,4 @@ class PilotSubmarine:
 
     def process_all_course_changes(self):
         for direction, unit in self.course_changes:
-            self.process_course_change(direction, unit)
+            self.process_course_change(direction, int(unit))
