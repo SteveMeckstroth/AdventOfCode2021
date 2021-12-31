@@ -9,6 +9,6 @@ class PilotSubmarine:
         print(self.depths)
 
     def process_course_change(self, direction: str, unit: int):
-        horizontal += unit if direction == "forward" else 0
-        depth += unit if direction == "down" else 0
-        depth -= unit if direction == "up" else 0
+        self.horizontal += unit if direction == "forward" else 0
+        self.depth += unit if direction == "down" else 0
+        self.depth -= unit if direction == "up" else 0
