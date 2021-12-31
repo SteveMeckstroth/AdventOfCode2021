@@ -5,7 +5,7 @@ class PilotSubmarine:
     depth = 0
     
     def __init__(self, input: str):
-        self.depths = [tuple(d.split(' ')) for d in input]
+        self.depths = [tuple(d.split(' ')) for d in input.split('\n')]
         print(self.depths)
 
     def process_course_change(direction: str, unit: int):
